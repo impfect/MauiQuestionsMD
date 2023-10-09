@@ -2,7 +2,7 @@
 
 ## Question 1
 
-What is the primary purpose of a Python function?
+#What is the primary purpose of a Python function?
 
 - To declare a variable
 - To define a class
@@ -15,7 +15,7 @@ What is the primary purpose of a Python function?
 
 ## Question 2
 
-Which of the following is a valid Python variable name?
+#Which of the following is a valid Python variable name?
 
 - 123variable
 - my-variable
@@ -28,7 +28,7 @@ Which of the following is a valid Python variable name?
 
 ## Question 3
 
-How do you print "Hello, World!" to the console in Python?
+#How do you print "Hello, World!" to the console in Python?
 
 - `print "Hello, World!"`
 - `echo "Hello, World!"`
@@ -41,7 +41,7 @@ How do you print "Hello, World!" to the console in Python?
 
 ## Question 4
 
-Which operator is used for exponentiation in Python?
+#Which operator is used for exponentiation in Python?
 
 - **
 - ^
@@ -54,7 +54,7 @@ Which operator is used for exponentiation in Python?
 
 ## Question 5
 
-What is the symbol used for single-line comments in Python?
+#What is the symbol used for single-line comments in Python?
 
 - `//`
 - `#`
@@ -67,7 +67,7 @@ What is the symbol used for single-line comments in Python?
 
 ## Question 6
 
-Which of the following statements is used to get user input in Python?
+#Which of the following statements is used to get user input in Python?
 
 - `input()`
 - `get_input()`
@@ -80,7 +80,7 @@ Which of the following statements is used to get user input in Python?
 
 ## Question 7
 
-What is the difference between a `tuple` and a `list` in Python?
+#What is the difference between a `tuple` and a `list` in Python?
 
 - Tuples are mutable, while lists are immutable.
 - Tuples are ordered collections, while lists are unordered.
@@ -93,7 +93,7 @@ What is the difference between a `tuple` and a `list` in Python?
 
 ## Question 8
 
-What is the purpose of the `if __name__ == "__main__":` block in a Python script?
+#What is the purpose of the `if __name__ == "__main__":` block in a Python script?
 
 - It defines a new function.
 - It initializes a global variable.
@@ -106,7 +106,7 @@ What is the purpose of the `if __name__ == "__main__":` block in a Python script
 
 ## Question 9
 
-Which Python module is commonly used for working with dates and times?
+#Which Python module is commonly used for working with dates and times?
 
 - `datetime`
 - `timeit`
@@ -119,7 +119,7 @@ Which Python module is commonly used for working with dates and times?
 
 ## Question 10
 
-What is the purpose of the `try` and `except` blocks in Python?
+#What is the purpose of the `try` and `except` blocks in Python?
 
 - To define custom functions
 - To create nested loops
@@ -132,7 +132,7 @@ What is the purpose of the `try` and `except` blocks in Python?
 
 ## Question 11
 
-Which of the following statements is true about Python's `for` loop?
+#Which of the following statements is true about Python's `for` loop?
 
 - It can only iterate over lists.
 - It can iterate over various iterable objects like lists, tuples, strings, and dictionaries.
@@ -145,7 +145,7 @@ Which of the following statements is true about Python's `for` loop?
 
 ## Question 12
 
-What does the `import` statement do in Python?
+#What does the `import` statement do in Python?
 
 - It exports a module to another program.
 - It defines a new function.
@@ -158,7 +158,7 @@ What does the `import` statement do in Python?
 
 ## Question 13
 
-Which of the following best describes the Global Interpreter Lock (GIL) in Python?
+#Which of the following best describes the Global Interpreter Lock (GIL) in Python?
 
 - It is a feature that allows for true parallel execution of Python code across multiple CPU cores.
 - It is a lock that prevents multiple threads from executing Python code simultaneously in CPython.
@@ -171,7 +171,7 @@ Which of the following best describes the Global Interpreter Lock (GIL) in Pytho
 
 ## Question 14
 
-Which of the following is true about Python's Global Interpreter Lock (GIL)?
+#Which of the following is true about Python's Global Interpreter Lock (GIL)?
 
 - It allows multiple threads to execute Python code simultaneously, improving performance.
 - It is a feature in Python 3.x but not in Python 2.x.
@@ -184,7 +184,7 @@ Which of the following is true about Python's Global Interpreter Lock (GIL)?
 
 ## Question 15
 
-What is the purpose of a Python decorator?
+#What is the purpose of a Python decorator?
 
 - To add comments to functions for better documentation.
 - To change the name of a function.
@@ -194,22 +194,4 @@ What is the purpose of a Python decorator?
 **Answer:** To modify the behavior of a function or method without changing its source code.
 
 **Explanation:** Decorators in Python are used to add functionality to functions or methods without altering their source code directly, making it a powerful tool for extending or modifying behavior.
-
-## Question 16
-
-What is the value of result in this code?
-"def nested_functions(x):
-@@@@def inner_function(y):
-@@@@@@@return x + y
-@@@@return inner_function
-result = nested_functions(5)(10)"
-
-- 15
-- 10
-- 5
-- Error
-
-**Answer:** 15
-
-**Explanation:** The nested_functions function returns the inner_function with x set to 5. When nested_functions(5)(10) is called, it adds 5 (from nested_functions) to 10, resulting in 15.
 
