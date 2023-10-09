@@ -158,27 +158,16 @@ What does the `import` statement do in Python?
 
 ## Question 13
 
-Consider the following Python code snippet:
+Which of the following best describes the Global Interpreter Lock (GIL) in Python?
 
-```python
-def outer_function(x):
-    def inner_function(y):
-        return x + y
-    return inner_function
+- It is a feature that allows for true parallel execution of Python code across multiple CPU cores.
+- It is a lock that prevents multiple threads from executing Python code simultaneously in CPython.
+- It is a mechanism for global variable synchronization in Python programs.
+- It is used to limit the execution time of Python scripts to prevent infinite loops.
 
-add_five = outer_function(5)
-result = add_five(10)
+**Answer:** It is a lock that prevents multiple threads from executing Python code simultaneously in CPython.
 
-What is the value of `result` in this code?
-
-- 15
-- 10
-- 5
-- Error
-
-**Answer:** 15
-
-**Explanation:** The `add_five` variable is assigned the `inner_function` with `x` set to 5. When `add_five(10)` is called, it adds 5 (from `add_five`) to 10, resulting in 15.
+**Explanation:** The Global Interpreter Lock (GIL) in CPython ensures that only one thread executes Python code at a time to avoid conflicts.
 
 ## Question 14
 
@@ -205,3 +194,22 @@ What is the purpose of a Python decorator?
 **Answer:** To modify the behavior of a function or method without changing its source code.
 
 **Explanation:** Decorators in Python are used to add functionality to functions or methods without altering their source code directly, making it a powerful tool for extending or modifying behavior.
+
+## Question 16
+
+What is the value of result in this code?
+"def nested_functions(x):
+@@@@def inner_function(y):
+@@@@@@@return x + y
+@@@@return inner_function
+result = nested_functions(5)(10)"
+
+- 15
+- 10
+- 5
+- Error
+
+**Answer:** 15
+
+**Explanation:** The nested_functions function returns the inner_function with x set to 5. When nested_functions(5)(10) is called, it adds 5 (from nested_functions) to 10, resulting in 15.
+
